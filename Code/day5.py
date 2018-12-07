@@ -13,7 +13,6 @@ def react_units(polymer_units):
                     # Pop the specific units from the list and break out of the for loop.
                     polymer_units.pop(i)
                     polymer_units.pop(i)
-                    raise IndexError
     except IndexError:
         {}
 
