@@ -7,6 +7,7 @@ def puzzle1():
     test_input = ['1, 1', '1, 6', '8, 3', '3, 4', '5, 5', '8, 9']
     gridsize = (0, 0)
     coordinates = []
+    grid = []
 
     # Determine size of the grid.
     for i, coordinate in enumerate(test_input):
@@ -18,8 +19,18 @@ def puzzle1():
 
         coordinates.append(Coordinate(name=string.ascii_letters[i], x=x, y=y))
 
-    for c in coordinates:
-        print(c)
+    for y in range(gridsize[1]):
+        row = []
+        for x in range(gridsize[0]):
+            char = '.'
+            for cord in coordinates:
+                if cord.x == x and cord.y == y:
+                    char = cord.name
+            row.append(char)
+        grid.append(row)
+
+    for row in grid:
+        print(row)
 
     return 0
 
