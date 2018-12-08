@@ -1,11 +1,13 @@
 def puzzle1():
     file_input = open('../Input/input_day.txt', 'r')
+    test_input = []
 
     return 0
 
 
 def puzzle2():
     file_input = open('../Input/input_day.txt', 'r')
+    test_input = []
 
     return 0
 
