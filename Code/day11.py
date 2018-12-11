@@ -14,8 +14,8 @@ def puzzle1():
     grid = createGrid(serial_number=serial_number)
 
     max_power = [0, 0, 0]
-    for i, row in enumerate(grid):
-        for j, x in enumerate(row):
+    for i in range(300):
+        for j in range(300):
             try:
                 total_power = 0
                 for ix in range(3):
